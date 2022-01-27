@@ -10,9 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css"
-        integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3779729c17.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,7 +19,7 @@
         <nav>
             <a href="index.html"><img src="assets/samip-logo.png"></a>
             <div class="nav-links" id="NavLinks">
-                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <i class="fas fa-times" onclick="hideMenu()"></i>
 
                 <ul>
                     <li><a href="#Home">Home</a></li>
@@ -29,7 +28,7 @@
                     <li><a href="#Connect">Contact</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <i class="fas fa-bars" onclick="showMenu()"></i>
 
         </nav>
         <div class="main_text">
@@ -41,18 +40,26 @@
 
 
 
-        
+
     </section>
     <!-- About Me-->
     <a name="About Me"></a>
     <section class="about-me">
+        <h3>
+            About Me
+        </h3>
         <div class="me-box">
-            <h3>
-                About Me
-            </h3>
-            <img src="assets/sergio-de-paula-c_GmwfHBDzk-unsplash.jpg" alt="image of a person">
+
+            <img src="assets/about-me.png" alt="image of a person">
             <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae similique cupiditate placeat sequi rerum quibusdam officia perferendis, sit voluptatum nihil non explicabo ex quod itaque soluta magnam repudiandae deleniti aut nisi fugiat totam laudantium dolorem ratione numquam. Similique nisi, voluptatem dolorem veritatis obcaecati dolorum? Repudiandae consequatur voluptas laudantium repellat, nesciunt harum doloribus, iusto, incidunt dolorum possimus maiores perspiciatis. Laudantium illo, architecto hic quis laborum doloremque deleniti nihil praesentium dolorem esse soluta quos ipsa atque vitae ad ipsam incidunt aliquam ducimus dolor eos? Quia consectetur fuga fugiat distinctio error minima repellendus aliquid laudantium eum modi iste, doloremque pariatur ipsum aperiam autem.
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae similique cupiditate placeat sequi
+                rerum quibusdam officia perferendis, sit voluptatum nihil non explicabo ex quod itaque soluta magnam
+                repudiandae deleniti aut nisi fugiat totam laudantium dolorem ratione numquam. Similique nisi,
+                voluptatem dolorem veritatis obcaecati dolorum? Repudiandae consequatur voluptas laudantium repellat,
+                nesciunt harum doloribus, iusto, incidunt dolorum possimus maiores perspiciatis. Laudantium illo,
+                architecto hic quis laborum doloremque deleniti nihil praesentium dolorem esse soluta quos ipsa atque
+                vitae ad ipsam incidunt aliquam ducimus dolor eos? Quia consectetur fuga fugiat distinctio error minima
+                repellendus aliquid laudantium eum modi iste, doloremque pariatur ipsum aperiam autem.
             </p>
         </div>
 
@@ -81,7 +88,22 @@
     </section>
 
 
+    
     <a name="Connect"></a>
+    <section class="contact-form">
+        <div class="container">
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <h3>Get In Touch</h3>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email-Id" required>
+                <textarea id="message" rows="4" placeholder="How Can I Help You?"></textarea>
+                <button type="submit">Send</button>
+
+            </form>
+        </div>
+    </section>
+
+    
     <section class="end-footer">
         <div class="footer-box">
             <h3>
@@ -90,13 +112,18 @@
             <p>Samip Paudel <br>samippaudel75@gmail.com <br><br>Location <br>Lumbini Region, Nepal
             </p>
         </div>
-        <div class="icons">
-            <a href="https://www.facebook.com/samip.paudel.399"><i class="fa fa-facebook"></i></a>
-            <a href=""><i class="fa fa-twitter"></i></a>
+        <!-- <div class="icons">
+            <a href="https://www.facebook.com/samip.paudel.399"><i class="fab fa-facebook"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
         </div>
-        <p>Made By Samip Paudel</p>
+        <p>Made By Samip Paudel</p> -->
 
     </section>
+    <div class="icons">
+        <a href="https://www.facebook.com/samip.paudel.399"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+        <p>Made By Samip Paudel</p>
+    </div>
 
 
 </body>
